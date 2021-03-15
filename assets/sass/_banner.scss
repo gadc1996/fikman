@@ -1,0 +1,47 @@
+@use 'variables';
+@use 'colors';
+@use 'mixings';
+
+.banner {
+	background-image: url("../img/banner.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	position: relative;
+	z-index: 1;
+	.information {
+		z-index: 1;
+		height: 80%;
+		width: 50%;
+		position: absolute;
+		top: 7rem;
+		left: 3rem;
+		padding: 3rem;
+		.title-text {
+			@include mixings.information-title;
+		}
+		.title {
+			@include mixings.information-title;
+			display: inline;
+			margin-left: 0.3rem;
+		}
+		.divider {
+			margin: 0.5rem 0;
+			height: 0.3rem;
+			background-color: colors.$blue;
+		}
+		.text {
+			font-size: 1.6rem;
+		}
+		.read-more {
+			border: 3px solid colors.$blue;
+			padding: 1.5rem;
+			background-color: rgba(0, 0, 0, 0);
+			color: white;
+			border-radius: 5px;
+			font-size: 1.7rem;
+			margin: 1rem 0;
+			cursor: pointer;
+		}
+	}
+}

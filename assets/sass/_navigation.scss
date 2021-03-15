@@ -1,0 +1,25 @@
+@use 'variables';
+@use 'colors';
+.navigation {
+	height: 5rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0);
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+	.logo {
+		height: 100%;
+	}
+	.navLink {
+		color: white;
+		text-decoration: none;
+	}
+	.navLink:hover {
+		color: colors.$linkHover;
+	}
+	.navLink:active {
+		color: colors.$linkActive;
+	}
+}
