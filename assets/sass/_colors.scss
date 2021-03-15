@@ -1,6 +1,13 @@
 /*Brand colors*/
 $blue: #004380;
+$darkBlue: #002980;
 
 /*Links colors*/
-$linkHover: #004380;
-$linkActive: green;
+$linkHover: $blue;
+$linkActive: $darkBlue;
+
+/*Section Colors*/
+$banner-text: #222;
+$banner-bg: #afafaf;
+$buttonHover: $blue;
+$buttonActive: $darkBlue;

@@ -10,6 +10,7 @@ body {
 
 /*Brand colors*/
 /*Links colors*/
+/*Section Colors*/
 .navigation {
   height: 5rem;
   display: flex;
@@ -31,7 +32,7 @@ body {
   color: #004380;
 }
 .navigation .navLink:active {
-  color: green;
+  color: #002980;
 }
 
 .banner {
@@ -44,22 +45,24 @@ body {
 }
 .banner .information {
   z-index: 1;
-  height: 80%;
+  height: auto;
   width: 50%;
   position: absolute;
   top: 7rem;
   left: 3rem;
   padding: 3rem;
+  background-color: #afafaf;
+  border-radius: 15px;
 }
 .banner .information .title-text {
   font-size: 1.7rem;
   font-weight: 800;
-  color: black;
+  color: #222;
 }
 .banner .information .title {
   font-size: 1.7rem;
   font-weight: 800;
-  color: black;
+  color: #222;
   display: inline;
   margin-left: 0.3rem;
 }
@@ -72,14 +75,23 @@ body {
   font-size: 1.6rem;
 }
 .banner .information .read-more {
+  display: inline-block;
   border: 3px solid #004380;
   padding: 1.5rem;
   background-color: rgba(0, 0, 0, 0);
-  color: white;
+  color: #222;
   border-radius: 5px;
   font-size: 1.7rem;
   margin: 1rem 0;
   cursor: pointer;
+  transition: 0.3s;
+}
+.banner .information .read-more:hover {
+  background-color: #004380;
+  color: white;
+}
+.banner .information .read-more:active {
+  background-color: #002980;
 }
 
 /*# sourceMappingURL=style.css.map */

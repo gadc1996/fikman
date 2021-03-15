@@ -11,12 +11,14 @@
 	z-index: 1;
 	.information {
 		z-index: 1;
-		height: 80%;
+		height: auto;
 		width: 50%;
 		position: absolute;
 		top: 7rem;
 		left: 3rem;
 		padding: 3rem;
+		background-color: colors.$banner-bg;
+		border-radius: 15px;
 		.title-text {
 			@include mixings.information-title;
 		}
@@ -34,14 +36,23 @@
 			font-size: 1.6rem;
 		}
 		.read-more {
+			display: inline-block;
 			border: 3px solid colors.$blue;
 			padding: 1.5rem;
 			background-color: rgba(0, 0, 0, 0);
-			color: white;
+			color: colors.$banner-text;
 			border-radius: 5px;
 			font-size: 1.7rem;
 			margin: 1rem 0;
 			cursor: pointer;
+			transition: 0.3s;
+		}
+		.read-more:hover {
+			background-color: colors.$buttonHover;
+			color: white;
+		}
+		.read-more:active {
+			background-color: colors.$buttonActive;
 		}
 	}
 }
